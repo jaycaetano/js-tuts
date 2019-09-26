@@ -3,9 +3,8 @@
 
  const tasks = ['take out the trash', 'shovel the driveway', 'walk the dog'];
  
- const element = React.createElement('ol', null,
- tasks.map((task, index) => React.createElement ('li', {key:index}, task)) 
-
- );
+ const element = <ol>
+     {tasks.map((task, index) => <li key={index}>{task}</li>)}
+ </ol>
 
  ReactDOM.render(element, document.getElementById('root'));
