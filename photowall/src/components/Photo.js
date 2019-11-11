@@ -13,5 +13,4 @@ function Photo (props) {
         </figure>
 }
 
-
 export default Photo
